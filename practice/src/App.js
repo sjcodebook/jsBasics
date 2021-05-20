@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import Login from './components/Login'
+import Dashboard from './components/Dashboard'
 
 const App = () => {
   const [isLoggedIn, setisLoggedIn] = useState(false)
@@ -12,6 +13,7 @@ const App = () => {
         <>
           <h2>some secure content</h2>
           <button onClick={() => setisLoggedIn(false)}>Logout</button>
+          <Dashboard />
         </>
       )}
     </div>
